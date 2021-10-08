@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="./css/main.css" />
+    
+    <style>
+      body {
+        background-color: #b0b0b0;
+      }
+
+      .shade {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+      }
+
+      .button {
+        position: fixed;
+        left: 50%;
+        bottom: 100px;
+        transform: translate(-50%);
+      }
+    </style>
+    <title>webgl - svg loader</title>
+
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <div id="container"></div>
+    <div id="info">
+      <a href="https://threejs.org" target="_blank" rel="noopener">three.js</a>
+      - SVGLoader
+    </div>
+    <button id="button">点击抽奖</button>
+  </body>
+</html>
