@@ -5,7 +5,6 @@ import { GUI } from "./three/examples/jsm/libs/dat.gui.module.js";
 import { OrbitControls } from "./three/examples/jsm/controls/OrbitControls.js";
 import { SVGLoader } from "./three/examples/jsm/loaders/SVGLoader.js";
 
-// import '../node_modules/aframe/dist/aframe-v1.2.0.js'
 
 const prefix = "./js/three/examples";
 

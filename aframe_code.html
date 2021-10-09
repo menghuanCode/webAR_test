@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>aframe_code</title>
+    <script src="./aframe/dist/aframe-master.js"></script>
+    <script src="./js/aframe_code.js"></script>
+    <script src="./js/aframe_page_controls.js"></script>
+  </head>
+  <body>
+    <a-scene > 
+      <a-assets>
+        <a-asset-item id="messageText" src="message.html"></a-asset-item>
+        <!--
+          Image 1, 2 source: https://imagecomics.com/comics/series/blackbird
+          Authors: Jen Bartel, Sam Humphries
+        -->
+        <img id="page1" crossOrigin="anonymous" src="./images/page1.jpg">
+        <img id="page2" crossOrigin="anonymous" src="./images/page2.jpg">
+        <!--
+          Image 3, 4, 5 source: https://imagecomics.com/comics/series/the-weatherman
+          Authors: Jody LeHeup, Nathan Fox
+        -->
+        <!-- <img id="page3" crossOrigin="anonymous" src="./images/page3.jpg">
+        <img id="page4" crossOrigin="anonymous" src="./images/page4.jpg">
+        <img id="page5" crossOrigin="anonymous" src="./images/page5.jpg"> -->
+      </a-assets>
+      <a-entity
+        layer="src: #page1; height: 3; width: 1.9505"
+      ></a-entity>
+      <a-entity oculus-go-controls="hand: left" page-controls></a-entity>
+      <a-entity oculus-go-controls="hand: right" page-controls></a-entity>
+    </a-scene>
+  </body>
+</html>
